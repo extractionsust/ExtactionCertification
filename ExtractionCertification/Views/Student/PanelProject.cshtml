@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>استمارة لجنة المشاريع</h2>
+<form action="/Student/Library" method="post" class="form-group inside">
+    <input type="text" name="name" value="" placeholder="اسم المشروع" class="form-control text-right"/><br />
+    <input type="text" name="name" value="" placeholder="اسم المشرف على المشروع" class="form-control text-right" /><br />
+    <input type="text" name="name" value="" placeholder="اسم قارئ المشروع" class="form-control text-right" /><br />
+    <hr />
+    <label>اسماء المشاركين في البحث</label>
+    <div id="divcont"class="form-inline dl-horizontal">
+        <input type="text" name="name" value="" placeholder="اسم الطالب" class="form-control text-right" /><input type="button" value="اضافة"onclick="addtext()" class="btn btn-primary btn-sm">
+    </div>
+    <br /><br />
+    <input type="submit" name="name" value="التالي" class="btn btn-primary" />
+</form>

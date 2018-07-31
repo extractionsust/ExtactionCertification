@@ -1,0 +1,17 @@
+﻿body {
+}
+#textform{
+    width:280px;
+}
+.inside{
+    margin-right:10%;
+}
+.textbox{
+    
+}
+.text{
+    padding:20px;
+}
+div#divcont {
+    display: inline;
+}

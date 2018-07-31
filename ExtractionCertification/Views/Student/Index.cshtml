@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>استخراج الشهادة</h2>
+
+<form action="/Student/Index" method="post" class="form-group pull-right">    
+    <input type="text" name="name" value="" placeholder="الاسم رباعي باللغة العربية" class="form-control text-right"/><br />
+    <input type="text" name="name" value="" placeholder="الاسم رباعي باللغة الانجليزية" class="form-control  text-right"/><br />
+    <input type="number" name="name" value="" placeholder="رقمك الطالبي" class="form-control  text-right" /><br />
+    <input type="number" name="name" value="" placeholder="رقم هاتفك" class="form-control  text-right" /><br />
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-sm btn-primary active"><input type="radio" name="name" value="section" autocomplete="off" checked />علوم الحاسوب</label>
+        <label class="btn btn-sm btn-primary"><input type="radio" name="name" value="section" autocomplete="off" />هندسة برمجيات</label>
+        <label class="btn btn-sm btn-primary"><input type="radio" name="name" value="section" autocomplete="off" />تقنية معلومات</label>
+        <label class="btn btn-sm btn-primary"><input type="radio" name="name" value="section" autocomplete="off" />شبكات</label>
+        <label class="btn btn-sm btn-primary"><input type="radio" name="name" value="section" autocomplete="off" />نظم معلومات</label>
+    </div>
+    <hr />
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-sm btn-primary active"><input type="radio" name="name" value="take" autocomplete="off" checked/>قبول عام</label>
+        <label class="btn btn-sm btn-primary"><input type="radio" name="name" value="take" autocomplete="off" />قبول خاص</label>
+        <label class="btn btn-sm btn-primary"><input type="radio" name="name" value="take" autocomplete="off" />تجسير</label>
+        <label class="btn btn-sm btn-primary"><input type="radio" name="name" value="take" autocomplete="off" />تحويل خارجي</label>
+    </div>
+    <hr />
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-sm btn-primary"><input type="radio" name="lastextract" value="yes" autocomplete="off"/>نعم</label>
+        <label class="btn btn-sm btn-primary active"><input type="radio" name="lastextract" value="no"  autocomplete="off" checked/>لا</label>
+        <label class="col-form-label"> <span class="text-warning text"> هل قمت بإستخراج شهادتك من قبل ؟</span></label>              
+    </div>
+    <hr /> 
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-sm btn-primary active "><input type="checkbox" name="name" value=""  /> اكمال لغة عربية</label>
+        <label class="btn btn-sm btn-primary "><input type="checkbox" name="name" value=""  /> اكمال لغة انجليزية</label>
+        <label class="btn btn-sm btn-primary "><input type="checkbox" name="name" value="" /> تفاصيل لغة عربية</label>
+        <label class="btn btn-sm btn-primary "><input type="checkbox" name="name" value="" /> تفاصيل لغة عربية</label>
+    </div>
+    <br /><br />
+    <input type="submit" name="name" value="التالي" class="btn btn-primary"/>
+</form>

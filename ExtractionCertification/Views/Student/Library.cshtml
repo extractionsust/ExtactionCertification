@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Library";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>استمارة المكتبة</h2>
+
+<form action="/Student/redirection" method="post" class="form-group pull-right">
+    <input type="text" name="name" value="" placeholder="عنوان البحث - عربي" class="form-control text-right" /><br />
+    <input type="text" name="name" value="" placeholder="عنوان البحث - انجليزي" class="form-control  text-right" /><br />
+    <input type="file" name="name" value="" placeholder="ارفاق البحث doc" class="form-control  text-right" /><br />
+    <input type="file" name="name" value="" placeholder="ارفاق البحث pdf" class="form-control  text-right" /><br />
+    <input type="number" name="name" value="" placeholder="رقم الهاتف" class="form-control  text-right" /><br />
+    <label class="btn btn-sm btn-primary dark"><input type="checkbox" name="name" value="" /> اوافق على النشر </label>
+
+    <br /><br />
+    <input type="submit" name="name" value="التالي" class="btn btn-primary" />
+</form>
